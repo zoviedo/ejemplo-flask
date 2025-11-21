@@ -1,0 +1,163 @@
+/* INSTRUCCIÓN CLAVE: UTILIZA ESTE ARCHIVO PARA ESTILIZAR TU SITIO WEB. */
+/* Puedes modificar completamente este contenido para adaptarlo al diseño de tu proyecto. */
+
+/* === Variables de Diseño === */
+:root {
+    --primary-color: #004080;
+    --secondary-color: #343a40;
+    --background-main: white;
+    --background-card-light: #f8f9fa;
+    --code-bg: #e6f7ff;
+    --error-color: #d9534f;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-main); 
+    color: var(--secondary-color);
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* === Header === */
+header {
+    background-color: var(--secondary-color); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* === Contenedor Principal === */
+.container {
+    padding: 40px 20px;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--background-main);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+h1 {
+    color: var(--primary-color); 
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+.subtitle {
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* === Sección de Guía de Archivos === */
+.guia-section {
+    padding: 30px;
+    background-color: var(--background-card-light);
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 1px solid #ced4da;
+    text-align: center;
+}
+
+.guia-section h2 {
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.file-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.code-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ced4da;
+    font-size: 1em;
+}
+
+.code-info:last-child {
+    border-bottom: none;
+}
+
+.file-name {
+    font-family: monospace;
+    background-color: var(--code-bg);
+    color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    flex-shrink: 0; 
+}
+
+.file-desc {
+    color: #495057;
+}
+
+/* === Botones === */
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.primary-btn:hover {
+    background-color: #003366;
+}
+
+.center-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* === Mensajes y Notas === */
+.message-box {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+}
+
+.note {
+    color: var(--error-color);
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}

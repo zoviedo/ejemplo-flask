@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Flask</title> 
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">HOSTING Template</div> 
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h1>Template Flask Desplegado</h1>
+            <p class="subtitle">
+                Esta aplicación Flask está sirviendo contenido dinámico desde un contenedor Python.
+            </p>
+            
+            <div class="guia-section">
+                <h2>Guía de Archivos Esenciales</h2>
+                
+                <div class="file-list-container">
+                    <div class="code-info">
+                        <span class="file-name">app.py</span>
+                        <span class="file-desc">Lógica principal y rutas (función index()).</span>
+                    </div>
+                    
+                    <div class="code-info">
+                        <span class="file-name">style.css</span>
+                        <span class="file-desc">Hoja de estilos CSS editable.</span>
+                    </div>
+                    
+                    <div class="code-info">
+                        <span class="file-name">templates/index.html</span>
+                        <span class="file-desc">Plantilla HTML renderizada.</span>
+                    </div>
+                </div>
+
+                <form method="POST" action="/" class="center-form">
+                    <button type="submit" class="primary-btn">Ejecutar Código Python</button>
+                </form>
+                
+                <p id="pyResultado" class="message-box">{{ mensaje_python }}</p>
+
+                <p class="note">
+                    Recuerda agregar tus librerías necesarias al archivo 'requirements.txt'.
+                </p>
+                
+            </div>
+        </section>
+    </main>
+
+    </body>
+</html>
